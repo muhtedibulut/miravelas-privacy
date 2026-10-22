@@ -1,5 +1,293 @@
 <!doctype html>
-<html lang="en">
-<head><meta charset="utf-8"><title>Miravelas</title></head>
-<body><p>Coming soon.</p></body>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miravelas Gizlilik Politikası</title>
+<style>
+  :root{
+    --bg:#FBF4EC; --fg:#2B2320; --muted:#6B5D54; --line:#E6D9CA;
+    --accent:#E7902A; --card:#FFFDFA; --warn:#B4701F;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#1A1614; --fg:#EFE6DC; --muted:#A8998C; --line:#352C27;
+      --accent:#E7902A; --card:#221C19; --warn:#D9933F;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#1A1614; --fg:#EFE6DC; --muted:#A8998C; --line:#352C27;
+    --accent:#E7902A; --card:#221C19; --warn:#D9933F;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:48px 16px 96px}
+  header{border-bottom:1px solid var(--line); padding-bottom:24px; margin-bottom:32px}
+  h1{font-size:28px; line-height:1.25; margin:0 0 8px; letter-spacing:-.01em}
+  .sub{color:var(--muted); font-size:15px; margin:0}
+  h2{font-size:20px; margin:40px 0 12px; letter-spacing:-.01em}
+  h3{font-size:16px; margin:24px 0 6px}
+  p{margin:0 0 14px}
+  ul{margin:0 0 14px; padding-left:20px}
+  li{margin:0 0 6px}
+  a{color:var(--warn)}
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:20px 22px; margin:0 0 32px;
+  }
+  .card p:last-child{margin-bottom:0}
+  .card ul{margin-bottom:0}
+  .gap{
+    border:1px dashed var(--warn); border-radius:10px; padding:14px 16px;
+    margin:0 0 14px; color:var(--warn); font-size:15px;
+  }
+  table{width:100%; border-collapse:collapse; margin:0 0 20px; font-size:15px}
+  th,td{text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top}
+  th{color:var(--muted); font-weight:600; font-size:13px; text-transform:uppercase; letter-spacing:.04em}
+  footer{margin-top:56px; padding-top:24px; border-top:1px solid var(--line); color:var(--muted); font-size:14px}
+  @media (max-width:520px){
+    .wrap{padding:32px 16px 72px}
+    h1{font-size:24px}
+    table{font-size:14px}
+    th,td{padding:8px 6px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Miravelas Gizlilik Politikası</h1>
+  <p class="sub">Son güncelleme: 22 Ekim 2026 · Sürüm 1.0</p>
+</header>
+
+<div class="card">
+  <p><strong>Kısaca:</strong></p>
+  <ul>
+    <li>Konumunuzu yalnızca <strong>siz açtığınızda</strong> ve yalnızca <strong>sizin seçtiğiniz grubun üyeleriyle</strong> paylaşıyoruz.</li>
+    <li>Paylaşımı istediğiniz an kapatabilirsiniz; kapattığınızda grubunuz bunu görür.</li>
+    <li>Telefon numaranızı <strong>istemiyoruz</strong>.</li>
+    <li>Verilerinizi <strong>satmıyoruz</strong> ve reklam ağlarına vermiyoruz.</li>
+    <li>Verilerinizin tamamını indirebilir, hesabınızı silebilirsiniz.</li>
+  </ul>
+</div>
+
+<h2>1. Veri sorumlusu</h2>
+<p>
+  Miravelas uygulamasının veri sorumlusu <strong>Mühtedi Bulut</strong>'tur.
+  Gizlilikle ilgili her konuda <a href="mailto:privacy@miravelas.com">privacy@miravelas.com</a>
+  adresinden ulaşabilirsiniz.
+</p>
+
+<h2>2. Hangi verileri topluyoruz</h2>
+
+<h3>Hesabınız</h3>
+<table>
+  <tr><th>Veri</th><th>Niçin</th></tr>
+  <tr><td>E-posta adresi</td><td>Kimliğiniz budur; giriş ve hesap doğrulama için</td></tr>
+  <tr><td>Şifreniz</td><td>Girişiniz için. Şifreniz <strong>asla düz hâliyle saklanmaz</strong>, geri çevrilemez bir şekilde özetlenir</td></tr>
+  <tr><td>Adınız</td><td>Grubunuzdaki üyelerin sizi tanıması için</td></tr>
+  <tr><td>Profil fotoğrafınız</td><td>İsteğe bağlı</td></tr>
+  <tr><td>Doğum tarihiniz</td><td>Yaşa bağlı düzenlemelere uyabilmek için</td></tr>
+  <tr><td>Saat diliminiz</td><td>Saatleri size göre göstermek için</td></tr>
+</table>
+<p>Telefon numaranızı sormuyoruz ve saklamıyoruz.</p>
+
+<h3>Konum</h3>
+<table>
+  <tr><th>Veri</th><th>Niçin</th></tr>
+  <tr><td>Anlık konumunuz</td><td>Grubunuzun sizi haritada görebilmesi için</td></tr>
+  <tr><td>Konum doğruluğu</td><td>Konumun ne kadar kesin olduğunu gösterebilmek için</td></tr>
+  <tr><td>Konum geçmişiniz</td><td>Geçmiş görünümü ve yer olayları için</td></tr>
+  <tr><td>Yerlere varış ve ayrılışlarınız</td><td>Tanımladığınız yerlere geldiğinizde grubunuzu haberdar etmek için</td></tr>
+  <tr><td>Pil seviyeniz</td><td>Konumunuz kesilmeden önce grubunuzun haberi olması için</td></tr>
+</table>
+<p>
+  <strong>Konumunuz arka planda da alınır</strong> — yani uygulama açık değilken de.
+  Bu yalnızca bir grupta konum paylaşımını açtığınızda olur. Paylaşımı kapattığınızda
+  arka planda konum alınmaz.
+</p>
+
+<h3>Kullanımınız</h3>
+<table>
+  <tr><th>Veri</th><th>Niçin</th></tr>
+  <tr><td>Tanımladığınız yerler</td><td>Ev, okul, iş gibi sizin belirlediğiniz yerler; grupla ortaktır</td></tr>
+  <tr><td>Plan maddeleri</td><td>Etkinlik, beklenti ve hatırlatıcılar</td></tr>
+  <tr><td>"İyiyim" bildirimleri ve istekleri</td><td>Grubunuzla haberleşmeniz için</td></tr>
+  <tr><td>Acil durum çağrıları</td><td>Alarmı kimin başlattığı, kime ulaştığı, kimin gördüğü</td></tr>
+  <tr><td>Paylaştığınız fotoğraf ve notlar</td><td>İsteğe bağlı olarak varışlara iliştirdikleriniz</td></tr>
+  <tr><td>Acil durum kişileriniz</td><td>Telefonunuzun rehberinden <em>seçtiğiniz</em> kişiler</td></tr>
+  <tr><td>Rıza kayıtlarınız</td><td>Neyi ne zaman paylaşmayı kabul ettiğinizin kaydı</td></tr>
+  <tr><td>Cihaz bilgisi</td><td>Bildirim gönderebilmek için cihaz adresi ve uygulama sürümü</td></tr>
+</table>
+<p>
+  Rehberinizin tamamını okuma izni <strong>istemiyoruz</strong>. Acil durum kişisi
+  eklerken telefonunuzun kendi seçicisi açılır ve yalnızca sizin seçtiğiniz kişi
+  uygulamaya geçer.
+</p>
+
+<h2>3. Niçin işliyoruz</h2>
+<p>
+  Topladığımız her veri, uygulamanın size vaat ettiği işi yapmak içindir: ailenizin
+  birbirinin nerede olduğunu bilmesi, bir yere varıldığında haberdar olması ve acil
+  bir durumda yardım çağrısının ulaşması.
+</p>
+<p>
+  Hukuki dayanağımız <strong>açık rızanızdır</strong>. Konum paylaşımını siz açarsınız,
+  istediğiniz an kapatırsınız. Rızanızı geri çektiğinizde ilgili paylaşım durur.
+</p>
+<h3>Ticari kullanım</h3>
+<p>
+  Miravelas'ı sürdürülebilir kılmak için uygulamanın bazı özellikleri ileride
+  ücretli olabilir.
+</p>
+<p>
+  Kişisel verilerinizi reklam amacıyla kullanmıyor, reklam ağlarına vermiyor ve
+  üçüncü taraflara satmıyoruz. Verileriniz yalnızca bu politikada sayılan amaçlarla
+  işlenir.
+</p>
+<p>
+  Kimliğinizi ortaya çıkarmayan toplu istatistikleri — örneğin kaç grup kurulduğu,
+  bir özelliğin ne sıklıkla kullanıldığı — ürünü geliştirmek ve tanıtmak için
+  kullanabiliriz.
+</p>
+<p>
+  İleride yeni bir kullanım amacı ortaya çıkarsa bunu size önceden bildirir,
+  gerekiyorsa ayrıca rızanızı isteriz.
+</p>
+
+<h2>4. Kimlerle paylaşıyoruz</h2>
+
+<h3>Grubunuzun üyeleri</h3>
+<p>
+  Konumunuzu, yer olaylarınızı, plan maddelerinizi ve paylaştığınız içerikleri
+  yalnızca <strong>sizin katıldığınız grupların üyeleri</strong> görür. Bir gruptan
+  ayrıldığınızda o grup sizi görmez.
+</p>
+
+<h3>Hizmet sağlayıcılar</h3>
+<table>
+  <tr><th>Kim</th><th>Ne için</th><th>Ne görüyor</th></tr>
+  <tr>
+    <td>Google (Firebase)</td>
+    <td>Bildirim gönderimi</td>
+    <td>Bildirim metni. Bildirimlerde <strong>kişi adları yer almaz</strong>; adlar telefonunuzda, kendi üye listenizden yazılır</td>
+  </tr>
+  <tr>
+    <td>Google (Haritalar)</td>
+    <td>Harita görüntüsü</td>
+    <td>Haritanın hangi bölgesini görüntülediğiniz</td>
+  </tr>
+  <tr>
+    <td>Resend</td>
+    <td>Doğrulama e-postaları</td>
+    <td>E-posta adresiniz</td>
+  </tr>
+  <tr>
+    <td>DigitalOcean</td>
+    <td>Sunucu barındırma</td>
+    <td>Verileriniz bu sunucularda saklanır</td>
+  </tr>
+</table>
+
+<h3>Hukuki zorunluluk</h3>
+<p>
+  Yetkili makamların mevzuata uygun ve usulüne uygun talepleri hâlinde verileri
+  paylaşmak zorunda kalabiliriz.
+</p>
+
+<h2>5. Verileriniz nerede saklanıyor</h2>
+<div class="gap">
+  Bu bölüm sunucunun bulunduğu ülke belirlendikten sonra doldurulacaktır. Yurt dışında
+  saklama söz konusuysa yurt dışına aktarım açıkça belirtilecektir.
+</div>
+
+<h2>6. Ne kadar süre saklıyoruz</h2>
+<table>
+  <tr><th>Veri</th><th>Süre</th></tr>
+  <tr>
+    <td><strong>Konum geçmişiniz</strong></td>
+    <td><strong>Süresiz saklanır.</strong> Uygulamada yalnızca son 12 ay gösterilir, ancak kayıtların tamamı sunucuda durur ve "verilerimi indir" dediğinizde tamamı size verilir</td>
+  </tr>
+  <tr><td>Yerlere varış ve ayrılış kayıtları</td><td>Yaklaşık 30 gün</td></tr>
+  <tr><td>Bildirim kayıtları</td><td>30 gün</td></tr>
+  <tr><td>Acil durum çağrıları</td><td>Yaklaşık 1 yıl</td></tr>
+  <tr><td>Hesap bilgileriniz ve içerikleriniz</td><td>Hesabınız açık olduğu sürece</td></tr>
+  <tr><td>Doğrulama kodları</td><td>Dakikalar içinde geçersiz olur</td></tr>
+</table>
+<p>
+  Hesabınızı sildiğinizde <strong>konum geçmişiniz dahil</strong> verileriniz silinir.
+</p>
+
+<h2>7. Haklarınız</h2>
+<p>Uygulamanın içinden kullanabileceğiniz haklar:</p>
+<ul>
+  <li><strong>Verilerinizi indirmek.</strong> Sakladığımız her şeyin bir kopyasını alabilirsiniz — uygulamada gösterilen 12 ay değil, kayıtların tamamı.</li>
+  <li><strong>Hesabınızı silmek.</strong> Silme talebinden sonra 30 gün içinde kalıcı olarak silinir. Bu süre boyunca gruplarınıza görünmezsiniz; fikrinizi değiştirip giriş yaparsanız talep iptal olur.</li>
+  <li><strong>Rızanızı geri çekmek.</strong> Konum paylaşımını, geçmiş görünürlüğünü ve içerik paylaşımını ayrı ayrı kapatabilirsiniz.</li>
+  <li><strong>Bilgilerinizi düzeltmek.</strong> Adınızı, fotoğrafınızı ve e-posta adresinizi değiştirebilirsiniz.</li>
+</ul>
+<p>
+  Kişisel Verilerin Korunması Kanunu'nun 11. maddesi kapsamındaki taleplerinizi
+  <a href="mailto:privacy@miravelas.com">privacy@miravelas.com</a> adresine iletebilirsiniz.
+  Taleplerinizi en geç 30 gün içinde sonuçlandırırız.
+</p>
+
+<h2>8. Telefonunuzdan istediğimiz izinler</h2>
+<table>
+  <tr><th>İzin</th><th>Niçin</th></tr>
+  <tr><td>Konum</td><td>Grubunuzun sizi görebilmesi için. Arka plan izni, uygulama kapalıyken de paylaşımın sürmesi içindir</td></tr>
+  <tr><td>Bildirim</td><td>Acil durum çağrıları ve grup bildirimleri için</td></tr>
+  <tr><td>Kamera ve fotoğraflar</td><td>Profil fotoğrafı ve paylaşmak istediğiniz anılar için — yalnızca siz seçtiğinizde</td></tr>
+</table>
+<p>
+  Her izni telefonunuzun ayarlarından geri alabilirsiniz. Konum iznini geri
+  aldığınızda konum paylaşımı durur.
+</p>
+
+<h2>9. Çocuklar</h2>
+<p>
+  Miravelas aile içi kullanım için tasarlanmıştır ve bir ailenin küçük üyeleri de
+  kullanabilir. Çocuğunuz adına hesap açılması ya da çocuğunuzun bir gruba katılması
+  durumunda, bu politikayı birlikte okumanızı öneririz.
+</p>
+<p>
+  Çocuğunuzun verilerine ilişkin her talebinizi
+  <a href="mailto:privacy@miravelas.com">privacy@miravelas.com</a> adresine
+  iletebilirsiniz; hesabın silinmesi talebi dahil.
+</p>
+
+<h2>10. Güvenlik</h2>
+<p>
+  Uygulama ile sunucu arasındaki tüm trafik şifrelenir. Şifreniz geri çevrilemez bir
+  şekilde özetlenerek saklanır; biz dahil kimse düz hâlini göremez. Şifrenizi
+  değiştirdiğinizde diğer cihazlardaki oturumlarınız kapatılır.
+</p>
+<p>
+  Hiçbir sistem kusursuz değildir. Verilerinizi etkileyen bir ihlal yaşanırsa, hukuken
+  zorunlu olduğumuz hâllerde sizi ve yetkili makamları bilgilendiririz.
+</p>
+
+<h2>11. Bu politikada değişiklik</h2>
+<p>
+  Bu politikayı zaman zaman güncelleyebiliriz. Önemli bir değişiklik olduğunda
+  uygulama içinden haber veririz. Sayfanın başındaki tarih, metnin en son ne zaman
+  değiştiğini gösterir.
+</p>
+
+<h2>12. İletişim</h2>
+<p>
+  <a href="mailto:privacy@miravelas.com">privacy@miravelas.com</a>
+</p>
+
+<footer>
+  Miravelas · M.B · Son güncelleme 22 Ekim 2026
+</footer>
+
+</div>
+</body>
 </html>
